@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<!-- "dark" mode has been used -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>groot</title>
+    <!-- link to bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- including favicon to this page -->
+    <link rel="icon" type="image/webp" href="../images/favicon.webp">
+    <!-- link to externel css -->
+    <link rel="stylesheet" href="../common/style.css" type="text/css">
+    <!-- embedded css -->
+    <style>
+        .carousel-indicators .active {
+            fill: rgb(78, 177, 8);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header of the page -->
+    <div id="header"></div>
+    <main>
+        <!-- top image -->
+        <img class="img-fluid w-100"
+            src="https://media.eventhubs.com/images/2018/03/5-baby-groot-guardians-galaxy-vol-2-isnt-original-reincarnated-has.jpg"
+            alt="groot">
+        <!-- quote section -->
+        <div class="card my-5 mx-3 bg-success bg-opacity-25">
+            <div class="card-header">
+                Quote
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0 text-center">
+                    <p class="fs-2">We Are Groot.</p>
+                    <footer class="blockquote-footer">by <cite title="Source Title">Groot</cite>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+        <!-- about -->
+        <div class="container-fluid">
+            <div class="row mx-3 my-5 gx-3 gy-5 border border-1">
+                <div class="d-flex align-items-center gap-3">
+                    <p class="display-5 fst-italic">About Groot</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </div>
+                <hr style="border-width: 10px;">
+                <div class="col-12">
+
+                    <img class="w-50 h-70 img-fluid rounded float-end imgshadow"
+                        src="https://i.pinimg.com/originals/2b/65/d7/2b65d7cd8371c5345f11a40c60e9ce78.jpg" alt="groot">
+
+                    <p>Groot is a Flora colossus who was the prophesized hero of Drez-Lar and the accomplice of Rocket
+                        Raccoon. Together, the pair had traveled the galaxy picking up bounties until they met Star-Lord
+                        and Gamora just before the four of them were captured and put into the Kyln, where they also met
+                        Drax the Destroyer. There, they agreed to work together to escape and sell the Orb for a massive
+                        profit. However, when it was discovered that the Orb contained one of the Infinity Stones which
+                        was being sought out by Ronan the Accuser, Groot convinced his friends to risk everything to
+                        stop Ronan's diabolical plans. During the Battle of Xandar, Groot sacrificed his own life to
+                        save his new friends. However, part of his destroyed body was planted by Rocket to birth a new
+                        Groot, as they joined the Guardians of the Galaxy.
+
+                        As the new Groot began to grow, he stayed with the Guardians and endeavored with them on many
+                        adventures. They were soon hired by the Sovereign to destroy an Abilisk, but they were then
+                        targeted by their former employers due to Rocket who double-crossed them. During the escape,
+                        they had met Peter Quill's father Ego while Groot and Rocket, along with Yondu Udonta, were
+                        captured by Taserface's faction of the Ravagers, but Groot was able to help them all escape.
+                        Groot then joined his allies and assisted them in destroying Ego and saving all his friends, but
+                        Udonta died. Over the next four years, Groot continued to grow and started exhibiting the
+                        personality of an adolescent.
+                    </p>
+
+                    <p>Both Groot and Rocket then left the Guardians temporarily to accompany Thor to Nidavellir in
+                        order to help his mission to stop Thanos from completing the Infinity Gauntlet. After they had
+                        helped Thor obtain his weapon, Stormbreaker, Groot and Rocket traveled to Earth using the
+                        Bifrost Bridge and joined the Battle of Wakanda. Groot fought alongside Captain America and
+                        attempted to attack Thanos; however, when the Mad Titan amassed all six of the Infinity Stones,
+                        he succeeded in eliminating fifty percent of the universe's population, which resulted in
+                        Groot's death.
+                    </p>
+                    <p>
+                        Five years later, the Avengers managed to resurrect the victims of the Snap, restoring Groot.
+                        Alongside Winter Soldier, he left Wakanda through an Inter-Dimensional Portal and joined the
+                        Battle of Earth. In the aftermath of the battle, Groot attended Tony Stark's funeral and
+                        rejoined the Guardians, now including Thor, on their adventures. Groot and the Guardians worked
+                        with Thor on several missions, but they went their separate ways after the Battle of Indigarr in
+                        order to protect worlds that had lost their gods to Gorr the God Butcher. While operating with
+                        the Guardians at Knowhere, his new heardquarters, Groot helped throw a Christmas party for Peter
+                        Quill, bringing Kevin Bacon as a Christmas present.
+                    </p>
+                    <br><br>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--image carousel -->
+
+        <div id="carouselExampleFade" class="container carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+
+                <svg class="active" aria-current="true" data-bs-slide-to="0" aria-label="Slide 1"
+                    xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                    class="bi bi-lightning-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5z" />
+                </svg>
+                <svg data-bs-slide-to="1" aria-label="Slide 2" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                    fill="currentColor" class="bi bi-lightning-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5z" />
+                </svg>
+                <svg data-bs-slide-to="2" aria-label="Slide 3" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                    fill="currentColor" class="bi bi-lightning-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5z" />
+                </svg>
+                <svg data-bs-slide-to="3" aria-label="Slide 4" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                    fill="currentColor" class="bi bi-lightning-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5z" />
+                </svg>
+
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="https://i.pinimg.com/1200x/03/f6/88/03f6888467d3c2153a4612930b3157da.jpg"
+                        class="d-block w-100" alt="groot">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://wallpapers.com/images/hd/happy-baby-groot-3dr6kb65nfq0lo6x.jpg"
+                        class="d-block w-100" alt="groot">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://picstatio.com/large/tibsg6/baby-Groot-Guardians-Of-The-Galaxy-Vol-2-2017-movie.jpg"
+                        class="d-block w-100" alt="groot">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://d23.com/app/uploads/2022/08/00_1180w-600h_groot_080222.jpg" class="d-block w-100"
+                        alt="groot">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- trailers and clips -->
+        <div class="container-fluid">
+            <div class="row justify-content-evenly gy-5 my-5 gx-3 mx-5">
+                <div class="d-flex align-items-center gap-3">
+                    <p class="display-5 fst-italic text-center">Trailers & clips</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                    <iframe width="250" height="150" src="https://www.youtube.com/embed/hZc0NkAAfwA?si=wP7vfJb41EsAvGQr"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                    <iframe width="250" height="150" src="https://www.youtube.com/embed/bZj1rJjpmvQ?si=l6GzlTrCZ1CbLsbf"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                    <iframe width="250" height="150" src="https://www.youtube.com/embed/lMQEmLGu264?si=bwcH3PQ1KW3QXYqj"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                    <iframe width="250" height="150" src="https://www.youtube.com/embed/cHAgzUEIKbM?si=L82a0p02qtghiX-5"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- comics section -->
+
+        <div class="container-fluid">
+
+            <div class="row mx-5 my-5 gx-5 gy-5">
+                <div class="d-flex align-items-center gap-3">
+                    <p class="display-5 fst-italic">Comics</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </div>
+                <hr style="border-width: 10px;">
+                <div class="col-6 col-lg-3">
+                    <img class="img-fluid h-100 comics"
+                        src="https://cdn.marvel.com/u/prod/marvel/i/mg/c/c0/64ecae64dc288/portrait_uncanny.jpg"
+                        alt="grootcomics">
+                </div>
+                <div class="col-6 col-lg-3">
+                    <img class="img-fluid h-100 comics"
+                        src="https://cdn.marvel.com/u/prod/marvel/i/mg/9/e0/649da2b43fe87/portrait_uncanny.jpg"
+                        alt="grootcomics">
+                </div>
+                <div class="col-6 col-lg-3">
+                    <img class="img-fluid h-100 comics"
+                        src="https://cdn.marvel.com/u/prod/marvel/i/mg/3/80/646e1f688a211/portrait_uncanny.jpg"
+                        alt="grootcomics">
+                </div>
+                <div class="col-6 col-lg-3">
+                    <img class="img-fluid h-100 comics"
+                        src="https://cdn.marvel.com/u/prod/marvel/i/mg/d/40/645111453e385/portrait_uncanny.jpg"
+                        alt="grootcomics">
+                </div>
+            </div>
+            <div class="row mx-5 my-5 gx-5 gy-5">
+                <div class="col-6 col-lg-3">
+                    <img class="img-fluid h-100 comics"
+                        src="https://cdn.marvel.com/u/prod/marvel/i/mg/1/50/6439708f73d65/portrait_uncanny.jpg"
+                        alt="grootcomics">
+                </div>
+                <div class="col-6 col-lg-3">
+                    <img class="img-fluid h-100 comics"
+                        src="https://cdn.marvel.com/u/prod/marvel/i/mg/e/70/5a0ca96ec0a3a/portrait_uncanny.jpg"
+                        alt="grootcomics">
+                </div>
+                <div class="col-6 col-lg-3">
+                    <img class="img-fluid h-100 comics"
+                        src="https://cdn.marvel.com/u/prod/marvel/i/mg/1/f0/59c28968668b6/portrait_uncanny.jpg"
+                        alt="grootcomics">
+                </div>
+                <div class="col-6 col-lg-3">
+                    <img class="img-fluid h-100 comics"
+                        src="https://cdn.marvel.com/u/prod/marvel/i/mg/9/c0/5988e05b9bc2a/portrait_uncanny.jpg"
+                        alt="grootcomics">
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <!-- footer of the page -->
+    <div id="footer"></div>
+
+    <!-- link to jquery js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(function () {
+            $("#header").load("../common/header.html");
+            $("#footer").load("../common/footer.html");
+        });
+    </script>
+    <!--link to  bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

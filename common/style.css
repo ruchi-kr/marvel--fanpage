@@ -1,0 +1,21 @@
+/* for proper alignment of images in carousel */
+.carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  height: 70vh;
+  overflow: hidden;
+}
+/* for comics hovering */
+.comics {
+  transition: all 0.2s;
+}
+
+.comics:hover {
+  border-radius: 14px;
+  transform: scale(1.15);
+  box-shadow: 1px 1px 42px 11px rgba(231, 247, 13, 0.81);
+  z-index: 10;
+}
+
+
+

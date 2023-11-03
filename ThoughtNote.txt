@@ -1,0 +1,136 @@
+RUCHI KUMARI - 1st sept batch
+
+ruchi.kumari63@gmail.com
+module assignment 3 - bootstrap
+
+
+                              ---- This is a descriptive note of my work----
+
+
+--- created one index.html and two folder named characters and common.
+--- In common folder, created three files named header.html, footer.html and style.css.
+--- This style.css file is linked to every webpage.
+--- header and footer are then dynamically added to all the pages including index.html
+    i.e. homepage.
+--- used jquery to add header and footer dynamically to all the webpages.
+--- so included jquery cdn links at the bottom of body tag in every webpage as well.
+--- and then added jquery code under script tag in every webpage.
+--- In character folder, created 12 html pages for 12 characters that i have created.
+--- Then included bootstrap css and js cdn links to all the webpages.
+--- Included only bootstrap css cdn links in header and footer to avoid duplications issue.
+--- All the webpages are fully responsive.
+--- used mostly bootstrap available classes for project. except the part where i wanted to 
+    add hovering effect.
+--- created navigation bar using nav pills.
+--- have added profile option in navbar , from where one can visit all the other webpages.
+--- The code is properly commented, both html and css.
+--- used dark mode theme to create this project.
+
+--- 1. header.html
+
+    -- created nav bar using nav pills.
+    -- navbar contains marvel logo, marvel text, home, profile dropdown button 
+       and disabled logout option.
+    -- included one logo in navbar using img tag.
+    -- added background color to navbar.
+    -- created dropdown menu and linked all the 12 characters to it.
+    -- added disabled option named logout
+    -- linked both home and navbar-brand to the index.html page.
+   
+
+--- 2. footer.html
+
+    -- added an icon and linked it to the top of the page using id.
+    -- created container and row. in one row created two col and included images to it.
+       each of these images take 6/12 columns for lg screen and
+       12/12 columns for md, sm & xs screen.
+    -- created another row and in this row created 5 columns. 
+    -- 1st column contains an logo image.                         [ col-12 col-md-4  col-lg-3 ]
+    -- 2nd and 3rd column contains some text. (for both 2nd & 3rd)[ col-12 col-md-4  col-lg-2 ]
+    -- 4th column contains image and text.                        [ col-12 col-md-12 col-lg-3 ]
+    -- 5th column contains some social media icons which          [ col-12 col-md-12 col-lg-2 ]
+       are linked to marvel respective pages.                
+    -- these all column takes 12/12 column in extra small screen.
+    -- created another container and row. in this row, created 6 columns. used text-secondary
+       bootstrap class for grey color to text.
+    -- each of these columns occupies 2/12 columns in large and medium screen.
+       and 4/12 columns in small and extra small screen. 
+    -- footer is fully responsive.
+
+
+ took 12/12 columns means  -  1 item will show up
+ took 3/12  columns means  -  4 item will show up
+ took 4/12  columns means  -  3 item will show up
+ took 2/12  columns means  -  6 item will show up
+ took 6/12  columns means  -  2 item will show up
+ 
+
+--- 3. index.html
+
+    -- image carousel section
+       - in this section, i have used autoplay carousel available in bootstrap.
+       - which needs to be interacted first and then autoplays.
+       - customized carousel indicator. used bootstrap icon for thundervolt icon.
+       - used 5 images in one carousel.
+       - the color of carousel indicators changes to yellow when it's active.
+
+
+    -- profile cards
+       - created cards using bootstrap available card format.
+       - created container-fluid and 3 rows in it.
+       - each row has 4 cards in it.
+       - each card contains image, text and button.
+       - and these image and button has hover effect applied on it. 
+       - each card has hover effect applied on it as well.
+       - these buttons is linked to respective page of the characters.
+       - these cards occupies 3/12 columns in large screen, 6/12 columns in
+         medium and small screen.
+       - and 12/12 column in mobile screen.
+       - fully responsive
+
+
+--- 4. tonystark.html  (explaining creation of one character page, rest ( 11 ) are clone
+       of this with change in pictures, videos and other details.)
+
+
+    -- banner image
+       - added banner image and changed image for different characters.
+       - fully responsive
+
+    -- quote section
+       - used card available in bootstrap for quote.
+       - played with background colorand opacity.
+       - changed quote for different characters.
+       - fully responsive
+
+    -- about section
+       - used container-fluid class.
+       - in about section included text and images.
+       - used bootstrap float property to make image float with text.
+       - fully responsive
+
+    -- image carousel
+       - used crossfade autoplay carousel available in bootstrap.
+       - used my customized carousel indicators and changed it's color for different characters.
+       - customized carousel indicator. used bootstrap icon for thundervolt icon.
+       - used >=3 images in carousel in every webpage.
+       - fully responsive
+
+    -- trailer and clips section
+       - used container-fluid class.
+       - used iframes and included youtube videos.
+       - each of these iframes takes 3/12 columns in large screens and 6/12 columns in medium
+         and small screens.
+       - and take 12/12 columns in extra small screen.
+       - content changes in every webpage.
+       - fully responsive
+
+    -- comics section
+       - used container-fluid class.
+       - created 2 rows of 4 col each.
+       - images has been added to each column.
+       - hover effects has been added to all images.
+       - each images occupies 6/12 column for mobile screen. 
+       - and occupies 3/12 column for large screens.
+       - content changes in every webpage.
+       - fully responsive.

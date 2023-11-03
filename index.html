@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<!-- "dark" mode has been used -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <!-- link to bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- including favicon to this page -->
+    <link rel="icon" type="image/webp" href="./images/favicon.webp">
+    <!-- link to externel css -->
+    <link rel="stylesheet" href="./common/style.css" type="text/css">
+    <!-- embedded css -->
+    <style>
+        /* card hovering */
+        .card {
+            transition: all 0.2s;
+        }
+
+        .card:hover {
+            background-color: rgb(12, 0, 0);
+            border-radius: 14px;
+            transform: scale(1.15);
+            box-shadow: 1px 1px 42px 11px rgba(231, 247, 13, 0.81);
+            z-index: 10;
+        }
+
+        /* for hovering of buttons in card */
+        .read {
+            transition: all 0.2s;
+        }
+
+        .read:hover {
+            border: none;
+            background-color: #bef17b !important;
+            color: #db1f06 !important;
+            transform: scale(1.15);
+        }
+
+        /* for carousel indicators */
+        .carousel-indicators .active {
+            fill: yellow;
+        }
+
+        /* for hovering of images in cards */
+        .inner {
+            overflow: hidden;
+        }
+
+        .inner img {
+            transition: all 0.2s;
+        }
+
+        .inner:hover img {
+            transform: scale(1.25);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header of the web page -->
+    <div id="header"></div>
+    <!-- main section of webpage -->
+
+    <main>
+
+        <!-- image carousel -->
+        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+
+                <svg class="active" aria-current="true" data-bs-slide-to="0" aria-label="Slide 1"
+                    xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                    class="bi bi-lightning-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5z" />
+                </svg>
+                <svg data-bs-slide-to="1" aria-label="Slide 2" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                    fill="currentColor" class="bi bi-lightning-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5z" />
+                </svg>
+                <svg data-bs-slide-to="2" aria-label="Slide 3" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                    fill="currentColor" class="bi bi-lightning-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5z" />
+                </svg>
+                <svg data-bs-slide-to="3" aria-label="Slide 4" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                    fill="currentColor" class="bi bi-lightning-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5z" />
+                </svg>
+                <svg data-bs-slide-to="4" aria-label="Slide 5" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                    fill="currentColor" class="bi bi-lightning-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5z" />
+                </svg>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1hcnZlbCUyMHN1cGVyaGVyb2VzJTIwbG9nb3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60"
+                        class="d-block w-100" alt="marvel comic">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://images.unsplash.com/photo-1636572481914-a07d36917486?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG1hcnZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60"
+                        class="d-block w-100" alt="superhero">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://images.unsplash.com/photo-1618519764620-7403abdbdfe9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fG1hcnZlbCUyMHN1cGVyaGVyb2VzfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60"
+                        class="d-block w-100" alt="comic">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://images.unsplash.com/photo-1635863138275-d9b33299680b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1hcnZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60"
+                        class="d-block w-100" alt="comic">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fG1hcnZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60"
+                        class="d-block w-100" alt="comic">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- profiles cards -->
+
+        <div class="container-fluid">
+            <!-- 1st row -->
+            <div class="row text-center my-5 mx-3 gx-3 gy-5">
+                <!-- 1st card -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card border border-0 h-100" style="width: 15rem;">
+                        <div class="inner">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYcB82Z9Vv1n1q3VvMX-NewwhCkt-vQnMK0w&usqp=CAU"
+                                class="card-img-top" alt="marvel-ironman">
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Tony Stark</h5>
+                            <p class="card-text">Anthony Edward Stark is a fictional character primarily portrayed by
+                                Robert Downey Jr. in the Marvel Cinematic Universe (MCU) media franchise—based on the
+                                Marvel Comics character of the same name—commonly known by his alias, Iron Man. Stark is
+                                initially depicted as an industrialist, genius inventor, and playboy who is CEO of Stark
+                                Industries. Initially the chief weapons manufacturer for the U.S. military, he has a
+                                change of heart and redirects his technical knowledge into the creation of mechanized
+                                suits of armor which he uses to defend earth.</p>
+                            <a href="./characters/tonystark.html" target="_blank" class="btn btn-primary read">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2nd card -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card border border-0 h-100" style="width: 15rem;">
+                        <div class="inner"> <img
+                                src="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/04/natasha-romanoff-at-the-end-of-black-widow.png"
+                                class="card-img-top" alt="Black widow"></div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Black Widow</h5>
+                            <p class="card-text">Black Widow is a 2021 American superhero film based on Marvel Comics
+                                featuring the character of the same name.The film was directed by Cate Shortland from a
+                                screenplay by Eric
+                                Pearson and stars Scarlett Johansson as Natasha Romanoff / Black Widow alongside
+                                Florence Pugh, David Harbour, O-T Fagbenle, Olga Kurylenko, William Hurt, Ray Winstone,
+                                and Rachel Weisz. Set after the events of Captain America: Civil War (2016), the film
+                                sees Romanoff on the run and forced to confront her past as a Russian spy before she
+                                became an Avenger.</p>
+                            <a href="./characters/blackwidow.html" target="_blank" class="btn btn-primary read">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3rd card -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card border border-0 h-100" style="width: 15rem;">
+                        <div class="inner"> <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5g2ItBxWR5BFSCp3H1RhEdzfs3Stbgae5lg&usqp=CAU"
+                                class="card-img-top" alt="marvel-thanos"></div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Thanos</h5>
+                            <p class="card-text">Thanos is a supervillain appearing in American comic books published by
+                                Marvel Comics. Created by writer-artist Jim Starlin, the character first appeared in The
+                                Invincible Iron Man #55. An Eternal–Deviant warlord from the moon Titan, Thanos is
+                                regarded as one of the most powerful beings in the Marvel Universe.</p>
+                            <p>He has clashed with many heroes including the Avengers, the Guardians of the Galaxy, the
+                                Fantastic Four, the Eternals, and the X-Men.</p>
+                            <a href="./characters/thanos.html" target="_blank" class="btn btn-primary read">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4th card -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card border border-0 h-100 " style="width: 15rem;">
+                        <div class="inner">
+                            <img src="https://static.toiimg.com/thumb/msid-102862461,width-1280,resizemode-4/102862461.jpg"
+                                class="card-img-top" alt="marvel-thor">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Thor</h5>
+                            <p class="card-text">Born 1500 years ago to Odin and Frigga, the king and queen of fabled
+                                Asgard, Thor grew into a mighty warrior and protector of his home and people. Thought to
+                                be rash and even reckless by his father, Thor nevertheless looked forward to the day of
+                                his ascension to the throne. But, his adoptive brother Loki schemed in private to ensure
+                                that day never arrived. He manipulated Thor into attacking the Frost Giants, legendary
+                                adversaries of the Asgardians and Loki’s people, and Odin—hoping to teach his son
+                                humility—divested Thor of his magic hammer Mjolnir and banished him to Midgard, the
+                                realm also known as Earth.</p>
+                            <a href="./characters/thor.html" target="_blank" class="btn btn-primary read">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 2nd row -->
+            <div class="row text-center my-5 mx-3 gx-3 gy-5">
+                <!-- 1st card -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card border border-0 h-100" style="width: 15rem;">
+                        <div class="inner"><img
+                                src="https://w0.peakpx.com/wallpaper/446/435/HD-wallpaper-captain-america-2020-captain-america-superheroes-artwork-artist.jpg"
+                                class="card-img-top" alt="captain america"></div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Captain American</h5>
+                            <p class="card-text">Steve Rogers, a rejected military soldier, transforms into Captain
+                                America after taking a dose of a "Super-Soldier serum". But being Captain America comes
+                                at a price as he attempts to take down a warmonger and a terrorist organization.In New
+                                York City, Steve Rogers is rejected for World War II military recruitment due to his
+                                various health and physical problems. While attending an exhibition of future
+                                technologies with his best friend, Sgt. He is recruited into the Strategic
+                                Scientific Reserve as part of a "super-soldier" experiment under Erskine, Colonel
+                                Chester Phillips, and British MI6 agent Peggy Carter. </p>
+                            <a href="./characters/ca.html" target="_blank" class="btn btn-primary read">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2nd card -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card border border-0 h-100" style="width: 15rem;">
+                        <div class="inner"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQciG--JRrSfnwD3jvQV5YhykXmU5wFxp2TWw&usqp=CAU"
+                                class="card-img-top" alt="marvel-doctor strange"></div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Doctor Strange</h5>
+                            <p class="card-text">From Marvel Studios comes “Doctor
+                                Strange,” the story of world-famous neurosurgeon Dr. Stephen Strange whose life changes
+                                forever after a horrific car accident where he loses the
+                                ability to use his hands. He goes to visit the mysterious Ancient One to heal himself
+                                and becomes a great sorcerer under her tutelage.In Kathmandu, the sorcerer Kaecilius and
+                                his zealots enter the secret compound Kamar-Taj and kills its librarian. They steal
+                                several pages from a book belonging to the Ancient One, the eldest sorcerer who has
+                                taught every student at Kamar-Taj, including Kaecilius, in the mystic arts.</p>
+                            <a href="./characters/drstrange.html" target="_blank" class="btn btn-primary read">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3rd card -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card border border-0 h-100" style="width: 15rem;">
+                        <div class="inner"> <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe9bj6RgC6DEzgAGpXnCCURjdoT-48Qo6Rdw&usqp=CAU"
+                                class="card-img-top" alt="groot-marvel"></div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">I am Groot</h5>
+                            <p class="card-text">Groot first appeared in Tales to Astonish #13 (Nov. 1960) He appeared
+                                again in The Incredible
+                                Hulk vol. 2 Annual #5 (Oct. 1976), alongside five other monsters from Marvel's anthology
+                                horror comics of the late 1950s and early 1960s.
+                                Groot reappeared in 2006 in the six-issue limited series Nick Fury's Howling Commandos,
+                                and appeared in the Annihilation: Conquest and Annihilation: Conquest – Star-Lord
+                                limited series. Groot went on to join the Guardians of the Galaxy in the series of the
+                                same name and remained a fixture of the title until its cancellation with issue #25 in
+                                2010. </p>
+                            <a href="./characters/groot.html" target="_blank" class="btn btn-primary read">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4th card -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card border border-0 h-100" style="width: 15rem;">
+                        <div class="inner"><img
+                                src="https://cdn.marvel.com/content/1x/captainmarvel_lob_mas_mob_03_0.jpg"
+                                class="card-img-top" alt="captainmarvel"></div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Captain Marvel</h5>
+                            <p class="card-text">Carol Danvers becomes one of the universe's most powerful heroes when
+                                Earth is caught in the middle of a galactic war between two alien races.Carol Danvers,
+                                aka Captain Marvel, has reclaimed her identity from the tyrannical Kree and taken
+                                revenge on the Supreme Intelligence. However, unintended consequences see her
+                                shouldering the burden of a destabilized universe. When her duties send her to an
+                                anomalous wormhole linked to a Kree revolutionary, her powers become entangled with two
+                                other superheroes to form the Marvels.</p>
+                            <a href="./characters/captainmarvel.html" target="_blank" class="btn btn-primary read">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 3rd row -->
+            <div class="row text-center my-5 mx-3 gx-5 gy-5">
+                <!-- 1st card -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card border border-0 h-100" style="width: 15rem;">
+                        <div class="inner"><img
+                                src="https://www.comicbasics.com/wp-content/uploads/2023/02/she-hulk.jpg"
+                                class="card-img-top" alt="she-hulk"></div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">She-Hulk</h5>
+                            <p class="card-text">A lawyer for the firm Goodman, Lieber, Kurtzberg & Holliway (GLK&H) who
+                                specializes in cases involving superhumans and becomes a large 6-foot-7-inch
+                                (2.01-meter), powerful, green-hued version of herself, similar to her cousin Bruce
+                                Banner, after accidentally getting cross-contaminated with his blood.A social media
+                                influencer with incredible strength who is obsessed with She-Hulk, ultimately becoming
+                                her rival.</p>
+                            <a href="./characters/shehulk.html" target="_blank" class="btn btn-primary read">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2nd card -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card border border-0 h-100" style="width: 15rem;">
+                        <div class="inner"> <img
+                                src="https://img.freepik.com/premium-photo/incredible-hulk-wallpapers-hd-wallpapers_853177-21137.jpg"
+                                class="card-img-top" alt="hulk"></div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Hulk</h5>
+                            <p class="card-text">Following his accidental exposure to gamma rays while saving the life
+                                of
+                                Rick Jones during the detonation of an experimental bomb, Banner is physically
+                                transformed into the Hulk when subjected to emotional stress, at or against his will.
+                                This transformation often leads to destructive rampages and to conflicts that complicate
+                                Banner's civilian life. The Hulk's level of strength is normally conveyed as
+                                proportionate to his level of anger.</p>
+                            <a href="./characters/hulk.html" target="_blank" class="btn btn-primary read">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3rd card -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card border border-0 h-100" style="width: 15rem;">
+                        <div class="inner"><img
+                                src="https://www.koimoi.com/wp-content/new-galleries/2022/10/black-panther-trivia-will-shuri-become-the-next-protector-of-wakanda-001.jpg"
+                                class="card-img-top" alt="black-panther"></div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Black Panther</h5>
+                            <p class="card-text">Thousands of years ago, five African tribes war over a meteorite
+                                containing the metal vibranium. One warrior ingests a "heart-shaped herb" affected by
+                                the metal and gains superhuman abilities, becoming the first "Black Panther". He unites
+                                all but the Jabari Tribe to form the nation of Wakanda. Over centuries, the Wakandans
+                                use vibranium to develop advanced technologies and isolate themselves from the world by
+                                posing as a Third World country.</p>
+                            <a href="./characters/bpanther.html" target="_blank" class="btn btn-primary read">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4th card -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card border border-0 h-100" style="width: 15rem;">
+                        <div class="inner"> <img
+                                src="https://www.tvmovie.de/assets/2018/09/08/66553-spider-man-auf-ps4.jpg"
+                                class="card-img-top" alt="spider man"></div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Spider Man</h5>
+                            <p class="card-text">Average teenager Peter Parker is transformed into an extraordinary
+                                super hero after he is accidentally bitten by a radioactive spider. When his beloved
+                                uncle is savagely murdered during a robbery, young Peter vows to use his powers to
+                                avenge his death. Deeming himself "Spider-Man ," he sets about ridding the streets of
+                                crime, bringing him into conflict with malevolent super-villain "Green Goblin."</p>
+                            <a href="./characters/spiderman.html" target="_blank" class="btn btn-primary read">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!--footer of the web page  -->
+    <div id="footer"></div>
+    <!-- link to jquery js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(function () {
+            $("#header").load("../common/header.html");
+            $("#footer").load("../common/footer.html");
+        });
+    </script>
+    <!--link to  bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

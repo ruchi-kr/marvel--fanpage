@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<!-- "dark" mode has been used -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thor</title>
+    <!-- link to bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- including favicon to this page -->
+    <link rel="icon" type="image/webp" href="../images/favicon.webp">
+    <!-- link to externel css -->
+    <link rel="stylesheet" href="../common/style.css" type="text/css">
+    <!-- embedded css -->
+    <style>
+        .carousel-indicators .active {
+            fill: rgb(177, 42, 8);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header of the page -->
+    <div id="header"></div>
+
+    <main>
+        <!-- top image -->
+        <img class="img-fluid w-100" src="https://storygrid.com/wp-content/uploads/2019/06/502-Thor-Ragnarok.png"
+            height="550px" alt="thor">
+        <!-- quote section -->
+        <div class="card my-5 mx-3 bg-danger bg-opacity-25">
+            <div class="card-header">
+                Quote
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0 text-center">
+                    <p class="fs-2">Whosoever holds this hammer, if he be worthy, shall possess the power of Thor.</p>
+                    <footer class="blockquote-footer">by <cite title="Source Title">Almighty Thor Odinson</cite>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+        <!-- about -->
+        <div class="container-fluid">
+            <div class="row mx-3 my-5 gx-3 gy-5 border border-1">
+                <div class="d-flex align-items-center gap-3">
+                    <p class="display-5 fst-italic">About Thor Odinson</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </div>
+                <hr style="border-width: 10px;">
+                <div class="col-12">
+
+                    <img class="w-50 h-70 img-fluid rounded float-end imgshadow"
+                        src="https://www.syfy.com/sites/syfy/files/2021/04/film-review-thor-2011.jpg" alt="thor">
+
+                    <p>Thor Odinson is the Asgardian God of Thunder, the former king of both Asgard and New Asgard, a
+                        founding member of the Avengers, and a former member of the Guardians of the Galaxy. When his
+                        irresponsible and impetuous behavior reignited an ancient war between Asgard and Jotunheim, Thor
+                        was denied the right to become king, stripped of his power and hammer Mjølnir, he was banished
+                        to Earth by Odin. While exiled on Earth, Thor found love with Jane Foster, and learned humility
+                        by saving his new friends from the Destroyer sent by Loki. Due to his selfless act of sacrifice,
+                        Thor redeemed himself in his father's eyes and was granted his power once more, which he then
+                        used to defeat Loki's schemes of genocide.
+
+                        Upon being welcomed back to Asgard as a hero, Thor was forced to return to Earth in order to
+                        retrieve Loki after he had begun his attempt at world domination with the Tesseract. Thor joined
+                        the Avengers under the guidance of S.H.I.E.L.D. and stood with them to stop Loki's schemes,
+                        eventually following the newly formed team as they battled against Loki's Chitauri army during
+                        the Battle of New York. After Loki's defeat, Thor captured and returned him to Asgard to await
+                        justice for his crimes.
+                    </p>
+
+                    <p> Thor helped the Asgardian armies restore peace across all of the Nine Realms during the War of
+                        the Nine Realms. However, the peace was disrupted by Malekith and the Dark Elves, who wanted to
+                        use the Aether to plunge the Nine Realms into eternal darkness. When Foster absorbed the Aether,
+                        Thor rallied to protect her on Asgard, leading to an attack by Malekith which resulted in
+                        Frigga's death. When the Aether was eventually removed from Foster, Thor helped defeat Malekith
+                        and his forces before they could unleash the Aether during the Convergence. Thor renounced his
+                        claim to the throne and left Asgard for Earth so he could stay with Foster. During their time
+                        together, Thor enchanted Mjølnir to protect Foster.
+                    </p>
+                    <p>
+                        During his stay on Earth, Thor helped the Avengers to locate Loki's Scepter during the fight
+                        against HYDRA. Following HYDRA's defeat and the capture of Baron Strucker, the team had to stop
+                        the newly created Ultron, a rogue A.I. created by Tony Stark which conspired to bring about
+                        human extinction. Once Ultron had been defeated, Thor went back to Asgard to investigate the
+                        visions he saw when being manipulated by Wanda Maximoff of the Infinity Stones. In his
+                        investigations, Thor also discovered that Loki was still alive and had usurped Odin's royal
+                        throne during Thor's absence.
+                    </p>
+                    <br><br>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--image carousel -->
+
+        <div id="carouselExampleFade" class="container carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+
+                <svg class="active" aria-current="true" data-bs-slide-to="0" aria-label="Slide 1"
+                    xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                    class="bi bi-lightning-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5z" />
+                </svg>
+                <svg data-bs-slide-to="1" aria-label="Slide 2" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                    fill="currentColor" class="bi bi-lightning-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5z" />
+                </svg>
+                <svg data-bs-slide-to="2" aria-label="Slide 3" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                    fill="currentColor" class="bi bi-lightning-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5z" />
+                </svg>
+
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="https://cdn.kayiprihtim.com/wp-content/uploads/2019/09/Avengers-Endgame-thor-ust.jpg"
+                        class="d-block w-100" alt="thor">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://lp-cms-production.imgix.net/news/2019/05/Thor-Avengers.jpg?auto=format&q=75"
+                        class="d-block w-100" alt="thor">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://static.digitecgalaxus.ch/Files/7/5/1/5/1/9/0/6/chris_hemsworth_about_thor_teaser_digitec_web21.png"
+                        class="d-block w-100" alt="thor">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- trailers and clips -->
+        <div class="container-fluid">
+            <div class="row justify-content-evenly gy-5 my-5 gx-3 mx-5">
+                <div class="d-flex align-items-center gap-3">
+                    <p class="display-5 fst-italic text-center">Trailers & clips</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                    <iframe width="250" height="150" src="https://www.youtube.com/embed/SdqLZTQHUVA?si=aXoUkQ8sD_9JJOEH"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                    <iframe width="250" height="150" src="https://www.youtube.com/embed/ODqPGttjjOY?si=J1-7mAxAEoHZdnq6"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                    <iframe width="250" height="150" src="https://www.youtube.com/embed/dnsBfW4L8_Q?si=w-XuA2fnA32tZqNd"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                    <iframe width="250" height="150" src="https://www.youtube.com/embed/LMC1a68xl6k?si=-HwclNHI6DhXqNb4"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- comics section -->
+
+        <div class="container-fluid">
+
+            <div class="row mx-5 my-5 gx-5 gy-5">
+                <div class="d-flex align-items-center gap-3">
+                    <p class="display-5 fst-italic">Comics</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </div>
+                <hr style="border-width: 10px;">
+                <div class="col-6 col-lg-3">
+                    <img class="img-fluid h-100 comics"
+                        src="https://cdn.marvel.com/u/prod/marvel/i/mg/9/b0/65086e8bad48a/portrait_uncanny.jpg"
+                        alt="thorcomics">
+                </div>
+                <div class="col-6 col-lg-3">
+                    <img class="img-fluid h-100 comics"
+                        src="https://cdn.marvel.com/u/prod/marvel/i/mg/5/d0/650db4a2d5542/portrait_uncanny.jpg"
+                        alt="thorcomics">
+                </div>
+                <div class="col-6 col-lg-3">
+                    <img class="img-fluid h-100 comics"
+                        src="https://cdn.marvel.com/u/prod/marvel/i/mg/9/80/650ae95f2be81/portrait_uncanny.jpg"
+                        alt="thorcomics">
+                </div>
+                <div class="col-6 col-lg-3">
+                    <img class="img-fluid h-100 comics"
+                        src="https://cdn.marvel.com/u/prod/marvel/i/mg/3/e0/64a5747c907f2/portrait_uncanny.jpg"
+                        alt="thorcomics">
+                </div>
+            </div>
+            <div class="row mx-5 my-5 gx-5 gy-5">
+                <div class="col-6 col-lg-3">
+                    <img class="img-fluid h-100 comics"
+                        src="https://cdn.marvel.com/u/prod/marvel/i/mg/1/20/6494a88620a97/portrait_uncanny.jpg"
+                        alt="thorcomics">
+                </div>
+                <div class="col-6 col-lg-3">
+                    <img class="img-fluid h-100 comics"
+                        src="https://cdn.marvel.com/u/prod/marvel/i/mg/6/50/6494a8cb640b3/portrait_uncanny.jpg"
+                        alt="thorcomics">
+                </div>
+                <div class="col-6 col-lg-3">
+                    <img class="img-fluid h-100 comics"
+                        src="https://cdn.marvel.com/u/prod/marvel/i/mg/8/e0/646b6a2ec150d/portrait_uncanny.jpg"
+                        alt="thorcomics">
+                </div>
+                <div class="col-6 col-lg-3">
+                    <img class="img-fluid h-100 comics"
+                        src="https://cdn.marvel.com/u/prod/marvel/i/mg/d/80/64511169c0694/portrait_uncanny.jpg"
+                        alt="thorcomics">
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- footer of the page -->
+    <div id="footer"></div>
+
+    <!-- link to jquery js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(function () {
+            $("#header").load("../common/header.html");
+            $("#footer").load("../common/footer.html");
+        });
+    </script>
+    <!--link to  bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
